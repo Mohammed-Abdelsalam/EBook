@@ -16,12 +16,12 @@ function App() {
     },
     {
       path: "/login",
-      element: <LogIn />,
+      element: <LogIn auth={setLIslogin} />,
     },
     {
       path: "/ebook",
       // element: <Ebook />,
-      element: islogin ? <Ebook /> : <LogIn x={setLIslogin} />,
+      element: islogin ? <Ebook /> : <LogIn auth={setLIslogin} />,
     },
     {
       path: "/ebook/:id",

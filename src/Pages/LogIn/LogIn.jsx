@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form";
 import Nav from "../../Components/Nav/Nav";
 import Footer from "../../Components/Footer/Footer";
 
-const LogIn = ({ x }) => {
+const LogIn = ({ auth }) => {
   const {
     register,
     handleSubmit,
@@ -23,7 +23,7 @@ const LogIn = ({ x }) => {
 
   const onSubmit = () => {
     navigate(`/ebook`);
-    x(true);
+    auth(true);
     console.log(values);
   };
 
